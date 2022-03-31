@@ -42,7 +42,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Beranda -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-home"></i>
                     <span>Beranda</span></a>
@@ -58,7 +58,7 @@
 
 
             <!-- Nav Item - Data Mahasiswa -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="mahasiswa.html">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Data Mahasiswa</span></a>
@@ -172,129 +172,106 @@
 
                     <!-- Page Beranda -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Beranda</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Data Mahasiswa</h1>
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Jumlah Mahasiswa</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">70</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-users fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Jumlah Dosen</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">20</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-user fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Jumlah
-                                                Mata Kuliah
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-book fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Laporan</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">300</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-folder fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Biaya Kuliah -->
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-12">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Biaya Kuliah</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <!-- Tabel Data Mahasiswa -->
+                    <div class="tabel-responsive">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>#</th>
+                                <th>NIM</th>
+                                <th>Nama</th>
+                                <th>Semester</th>
+                                <th>Jurusan</th>
+                                <th>Fakultas</th>
+                                <th>Aksi</th>
+                            </tr>
+    
+                            <tr>
+                                <td>1</td>
+                                <td>11-222-333</td>
+                                <td>Acho</td>
+                                <td>IV</td>
+                                <td>Teknik Mesin</td>
+                                <td>Teknik</td>
+                                <td>
+                                    <button class="btn btn-primary">Detail</button>
+                                    <button class="btn btn-warning">Ubah</button>
+                                    <button class="btn btn-danger">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>11-222-333</td>
+                                <td>Jeky</td>
+                                <td>IV</td>
+                                <td>Teknik Mesin</td>
+                                <td>Teknik</td>
+                                <td>
+                                    <button class="btn btn-primary">Detail</button>
+                                    <button class="btn btn-warning">Ubah</button>
+                                    <button class="btn btn-danger">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>11-222-333</td>
+                                <td>Jekson</td>
+                                <td>IV</td>
+                                <td>Teknik Mesin</td>
+                                <td>Teknik</td>
+                                <td>
+                                    <button class="btn btn-primary">Detail</button>
+                                    <button class="btn btn-warning">Ubah</button>
+                                    <button class="btn btn-danger">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>11-222-333</td>
+                                <td>Jekson</td>
+                                <td>IV</td>
+                                <td>Teknik Mesin</td>
+                                <td>Teknik</td>
+                                <td>
+                                    <button class="btn btn-primary">Detail</button>
+                                    <button class="btn btn-warning">Ubah</button>
+                                    <button class="btn btn-danger">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>11-222-333</td>
+                                <td>Jekson</td>
+                                <td>IV</td>
+                                <td>Teknik Mesin</td>
+                                <td>Teknik</td>
+                                <td>
+                                    <button class="btn btn-primary">Detail</button>
+                                    <button class="btn btn-warning">Ubah</button>
+                                    <button class="btn btn-danger">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>11-222-333</td>
+                                <td>Jekson</td>
+                                <td>IV</td>
+                                <td>Teknik Mesin</td>
+                                <td>Teknik</td>
+                                <td>
+                                    <button class="btn btn-primary">Detail</button>
+                                    <button class="btn btn-warning">Ubah</button>
+                                    <button class="btn btn-danger">Hapus</button>
+                                </td>
+                            </tr>
+                          </table>
 
                     </div>
+                    
+                    <!-- end Tabel Data Mahasiswa -->
 
-                  
                 </div>
                 <!-- /.container-fluid -->
 
